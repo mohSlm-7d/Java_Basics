@@ -1,0 +1,61 @@
+public class HospitalProject {
+    static Scanner input = new Scanner(System.in);
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int No;
+        System.out.print("Enter No: ");
+        No = input.nextInt();
+        if(No / 1000000000 != 0 && /*(int)(*/No / 10000000000f/*)*/ == 0)
+            System.out.println("Accepted");
+        else{
+                System.out.println("Not Accepted");
+                System.out.println(No / 10000000000d);
+                System.out.println(sizeof());
+        }
+        //0.123456789   0.12345679
+    }
+    
+}
+/*test on Exception handling. Note that int cannot take more than 10 digits 
+if the value is more than 10 digits then you have to declare a data type with bigger
+size such as float or double.*/
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package hospitalproject;
+import java.util.Scanner;
+/**
+ *
+ * @author M7md_2
+ */
+public class HospitalProject {
+    static Scanner input = new Scanner(System.in);
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+       int No = 0;
+       //No = input.nextInt();
+       try{       
+        System.out.print("Enter No: ");
+        No = input.nextInt();
+       }catch(Exception E){
+        if(No / 1000000000 != 0 && /*(int)(*/No / 10000000000f/*)*/ == 0)
+            System.out.println("Accepted");
+       
+        else{
+                System.out.println("Not Accepted");
+                System.out.println(No / 10000000000d);
+        }
+        System.out.println(E.getMessage());
+               }
+        //0.123456789   0.12345679
+    }
+    
+}
