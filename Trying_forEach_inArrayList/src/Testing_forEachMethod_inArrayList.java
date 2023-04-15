@@ -73,8 +73,8 @@ class Testing_forEachMethod_inArrayList {
         DAYS today = DAYS.SUNDAY;
 
         /*System.out.println(today.toString());
-        String test="Mohammad";
-        Integer ASCII= (int)t.charAt(0);
+        String _test="Mohammad";
+        Integer ASCII= (int)_test.charAt(0);
         System.out.println(ASCII);*/
         
     }
