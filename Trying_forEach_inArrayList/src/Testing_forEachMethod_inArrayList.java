@@ -62,13 +62,17 @@ class Testing_forEachMethod_inArrayList {
         enum DAYS {
             SUNDAY,
             MOONDAY,
+            Tuseday,
+            Wednesday,
+            Thursday,
+            Friday,
             SATURDAY
         }
         
         
         DAYS today = DAYS.SUNDAY;
 
-        /*ystem.out.println(today.toString());
+        /*System.out.println(today.toString());
         String test="Mohammad";
         Integer ASCII= (int)t.charAt(0);
         System.out.println(ASCII);*/
